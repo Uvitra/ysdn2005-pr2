@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Bootstrap 101 Template</title>
+		<title>What's that letter?</title>
 
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -23,107 +23,79 @@
 	</head>
 	<body>
 		<div class="container">
-			<nav class="hidden-sm hidden-md hidden-lg navbar navbar-default">
-				<div class="container-fluid">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-<!--						<a class="navbar-brand" href="#">All Terms</a>-->
+			
+			<header>
+				<div class="page-header">
+					<h1 class="goudy">What's that letter stand for again?</h1>
+					<h2 class="goudy small">A quick reference for each of the letters in the rainbow.</h2>
+				</div>
+			</header>
+			
+			<main>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<button class="any-btn-group btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#filter" aria-expanded="false" aria-controls="filter">Filter</button>
+						<div class="collapse" id="filter">
+							<div class="any-btn-group btn-group button-group filter-button-group" role="group" aria-label="...">
+							<button type="button" class="btn btn-default btn-primary" data-filter="*">show all</button>
+							<button type="button" class="btn btn-default" data-filter=".sexual-orientation">Sexual Orientation</button>
+							<button type="button" class="btn btn-default" data-filter=".gender-identity">Gender Identity</button>
+			<!--				<button type="button" class="btn btn-default" data-filter=".alkali, .alkaline-earth">alkali & alkaline-earth</button>-->
+			<!--				<button type="button" class="btn btn-default" data-filter=":not(.transition)">not transition</button>-->
+			<!--				<button type="button" class="btn btn-default" data-filter=".metal:not(.transition)">metal but not transition</button>-->
+							</div>
+						</div>
 					</div>
 
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav navbar-right">
-							
-							<li><a href="#">G — Gay</a></li>
-							
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">All Terms<span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">G — Gay</a></li>
-									<li><a href="#">Another action</a></li>
-									<li><a href="#">Something else here</a></li>
-									<li role="separator" class="divider"></li>
-									<li><a href="#">Separated link</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div><!-- /.navbar-collapse -->
-				</div><!-- /.container-fluid -->
-			</nav>
-			
-			<div class="page-header">
-				<h1 class="goudy">What's that letter for again? <small>I can never remember. lol</small></h1>
-			</div>
-			
-<!--
-			<div class="row">
-				<div class="half-height col-xs-12 flex-bottom-left">
-					<h1 class="goudy">What's that letter for again?</h1>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<button class="any-btn-group btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#sorting" aria-expanded="false" aria-controls="sorting">Sorting</button>
+						<div class="collapse" id="sorting">
+							<div class="any-btn-group btn-group button-group sort-by-button-group">
+								<button type="button" class="btn btn-default btn-primary" data-sort-by="original-order">original order</button>
+								<button type="button" class="btn btn-default" data-sort-by="name">Alphabetical</button>
+								<button type="button" class="btn btn-default" data-sort-by="letterCount">LetterCount</button>
+								<button type="button" class="btn btn-default" data-sort-by="number">number</button>
+								<button type="button" class="btn btn-default" data-sort-by="weight">weight</button>
+								<button type="button" class="btn btn-default" data-sort-by="category">category</button>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
--->
-			<main>
-			<div class="filter-btn-group btn-group button-group filter-button-group" role="group" aria-label="...">
-				<button type="button" class="btn btn-default" data-filter="*">show all</button>
-				<button type="button" class="btn btn-default" data-filter=".sexual-orientation">Sexual Orientation</button>
-				<button type="button" class="btn btn-default" data-filter=".gender-identity">Gender Identity</button>
-				<button type="button" class="btn btn-default" data-filter=".alkali, .alkaline-earth">alkali & alkaline-earth</button>
-				<button type="button" class="btn btn-default" data-filter=":not(.transition)">not transition</button>
-				<button type="button" class="btn btn-default" data-filter=".metal:not(.transition)">metal but not transition</button>
-			</div>
-<!--
-			<div class="dropdown">
-				<button id="dLabel" class="btn btn-default" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				Filter
-				<span class="caret"></span>
-				</button>
-				<ul class="dropdown-menu" aria-labelledby="dLabel">
-					<li><a type="button" class="" data-filter="*">show all</a></li>
-					<li><a type="button" class="" data-filter=".sexual-orientation">Sexual Orientation</a></li>
-					<button type="button" class="btn btn-default" data-filter=".gender-identity">Gender Identity</button>
-					<button type="button" class="btn btn-default" data-filter=".alkali, .alkaline-earth">alkali & alkaline-earth</button>
-					<button type="button" class="btn btn-default" data-filter=":not(.transition)">not transition</button>
-					<button type="button" class="btn btn-default" data-filter=".metal:not(.transition)">metal but not transition</button>
-				</ul>
-			</div>
--->
+
 				
 			<div class="grid">
-				<div class="flex-bottom-left grid-item sexual-orientation"><p>Lesbian</p></div>
-				<div class="flex-bottom-left grid-item sexual-orientation"><p>Gay</p></div>
-				<div class="flex-bottom-left grid-item sexual-orientation"><p>Bisexual</p></div>
-				<div class="flex-bottom-left grid-item gender-identity"><p>Trans*</p></div>
-				<div class="flex-bottom-left grid-item sexual-orientation"><p>Queer</p></div>
-				<div class="flex-bottom-left grid-item sexual-orientation"><p>Questioning</p></div>
-				<div class="flex-bottom-left grid-item"><p>Intersex</p></div>
-				<div class="flex-bottom-left grid-item gender-identity"><p>Asexual</p></div>
-				<div class="flex-bottom-left grid-item"><p>Unsure</p></div>
-				<div class="flex-bottom-left grid-item"><p>Curius</p></div>
+				<div class="flex-bottom-left grid-item sexual-orientation"><a href="pages/lesbian.html" class="name">Lesbian</a></div>
+				<div class="flex-bottom-left grid-item sexual-orientation"><p class="name">Gay</p></div>
+				<div class="flex-bottom-left grid-item sexual-orientation"><p class="name">Bisexual</p></div>
+				<div class="flex-bottom-left grid-item gender-identity"><p class="name">Trans*</p></div>
+				<div class="flex-bottom-left grid-item sexual-orientation"><p class="name">Queer</p></div>
+				<div class="flex-bottom-left grid-item sexual-orientation"><p class="name">Questioning</p></div>
+				<div class="flex-bottom-left grid-item"><p class="name">Intersex</p></div>
+				<div class="flex-bottom-left grid-item gender-identity"><p class="name">Asexual</p></div>
+				<div class="flex-bottom-left grid-item"><p class="name">Unsure</p></div>
+				<div class="flex-bottom-left grid-item"><p class="name">Curius</p></div>
 <!--				<div class="grid-item">Transvestite</div>-->
-				<div class="flex-bottom-left grid-item gender-identity"><p>2-Sprited</p></div>
-				<div class="flex-bottom-left grid-item gender-identity"><p>Genderqueer</p></div>
-				<div class="flex-bottom-left grid-item"><p>Ally</p></div>
-				<div class="flex-bottom-left grid-item"><p>Hijra</p></div>
-				<div class="flex-bottom-left grid-item sexual-orientation"><p>Pansexual</p></div>
-				<div class="flex-bottom-left grid-item sexual-orientation"><p>Polysexual</p></div>
-				<div class="flex-bottom-left grid-item gender-identity"><p>Kathoey</p></div>
-				<div class="flex-bottom-left grid-item"><p>Unsure</p></div>
-				<div class="flex-bottom-left grid-item gender-identity sexual-orientation"><p>Other</p></div>
+				<div class="flex-bottom-left grid-item gender-identity"><p class="name">2-Sprited</p></div>
+				<div class="flex-bottom-left grid-item gender-identity"><p class="name">Genderqueer</p></div>
+				<div class="flex-bottom-left grid-item"><p class="name">Ally</p></div>
+				<div class="flex-bottom-left grid-item"><p class="name">Hijra</p></div>
+				<div class="flex-bottom-left grid-item sexual-orientation"><p class="name">Pansexual</p></div>
+				<div class="flex-bottom-left grid-item sexual-orientation"><p class="name">Polysexual</p></div>
+				<div class="flex-bottom-left grid-item gender-identity"><p class="name">Kathoey</p></div>
+				<div class="flex-bottom-left grid-item"><p class="name">Unsure</p></div>
+				<div class="flex-bottom-left grid-item gender-identity sexual-orientation"><p class="name">Other</p></div>
+				<div class="flex-bottom-left grid-item gender-identity sexual-orientation"><p class="home-about">About this Website</p></div>
 			</div>
 			</main>
 			
 			<footer>
 				<div class="row">
 				  <div class="col-xs-12">
+<!--
 						<p>
 							About this page and where to find more information
 						</p>
+-->
 						<p>
 							© 2017 | Aaron Vince for YSDN 2005 — Processes and Workflows: Visual Interaction Design
 						</p>
