@@ -26,10 +26,15 @@
 
 html, body {
 	font-family: "Frutiger LT Std", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	margin-top: 40px;
 }
 
 h1 {
 	font-size: 300%;
+}
+
+h2 {
+	font-weight: bold;
 }
 
 .small {
@@ -65,7 +70,7 @@ h1 {
 .grid div p, .grid div a {
 	font-size: 5.25vw;
 /*	color: hsla(0,0%,10%,0.50);*/
-	color: hsla(0,0%,100%,0.7);
+	color: hsla(0,0%,100%,0.65);
 	
 	margin-bottom: -0.15em;
 	font-family: "Goudy Heavyface Std", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
@@ -150,15 +155,22 @@ a:hover {
 .grid div:nth-child(19) {
 	background-color: hsla(224,100%,52%,1.00);
 }
-.grid div:nth-child(20) {
+.grid div:nth-child(20), .grid div:nth-child(21) {
 	background-color: hsla(0,0%,75%,1.00);
 }
 
 .home-about {
-	
+	line-height: 1;
+	padding-bottom: 1rem;
 }
 
 /*L related links*/
+.back-to-list {
+	margin-right: 2rem;
+	color: red;
+/*	border: 1px solid red;*/
+}
+
 .jumbotron h1 {
 	color: white;
 	position: relative;
@@ -189,7 +201,7 @@ footer {
 	.grid-item--width2 { width: 66%; }
 	
 	.grid div p, .grid div a {
-		font-size: 30px;
+		font-size: 28px;
 	}
 }
 
@@ -199,7 +211,7 @@ footer {
 	.grid-item--width2 { width: 50%; }
 	
 	.grid div p, .grid div a {
-		font-size: 28px;
+		font-size: 26px;
 	}
 }
 
@@ -209,7 +221,7 @@ footer {
 	.grid-item--width2 { width: 40%; }
 	
 	.grid div p, .grid div a {
-		font-size: 26px;
+		font-size: 24px;
 		margin-left: -0.5em;
 	}
 }
