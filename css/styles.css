@@ -47,8 +47,17 @@ h2 {
 	font-family: "Goudy Heavyface Std", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 }
 
+.background-colour-to-white {
+	background-color: white;
+}
+
+.glyphicon-link {
+	font-size: smaller;
+}
+
 .any-btn-group {
 	margin-bottom: 2rem;
+/*	margin-top: .5rem;*/
 /*	font-size: 125%;*/
 }
 
@@ -97,65 +106,65 @@ a:hover {
 	background-image: linear-gradient(hsla(0,0%,100%,0.750), hsla(0,0%,100%,.0));
 }
 
-.grid div:nth-child(1) {
+.lesbian-colour {
 	background-color: hsla(300,100%,25%,1.00);
 }
-.grid div:nth-child(2) {
+.gay-colour {
 	background-color: hsla(321,71%,49%,1.00);
 }
-.grid div:nth-child(3) {
+.bisexual-colour {
 /*	background-image: linear-gradient(to top, #D70370 0%, #0238A8 100%);*/
 	background-color: hsla(277,83%,52%,1.00);
 }
-.grid div:nth-child(4) {
+.trans-colour {
 	background-color: hsla(200,74%,70%,1.00);
 }
-.grid div:nth-child(5) {
+.queer-colour {
+	background-color: hsla(241,55%,39%,1.00);
+}
+.questioning-colour {
 	background-color: hsla(138,100%,25%,1.00);
 }
-.grid div:nth-child(6) {
+.intersex-colour {
 	background-color: hsla(56,100%,45%,1.00);
 }
-.grid div:nth-child(7) {
+.asexual-colour {
 	background-color: hsla(224,100%,52%,1.00);
 }
-.grid div:nth-child(8) {
+.unsure-colour {
 	background-color: hsla(291,90%,28%,1.00);
 }
-.grid div:nth-child(9) {
+.curius-colour {
 	background-color: hsla(1,98%,45%,1.00);
 }
-.grid div:nth-child(10) {
+.twospirited-colour {
 	background-color: hsla(33,100%,50%,1.00);
 }
-.grid div:nth-child(11) {
+.genderqueer-colour {
 	background-color: hsla(56,100%,45%,1.00);
 }
-.grid div:nth-child(12) {
+.ally-colour {
 	background-color: hsla(138,100%,25%,1.00);
 }
-.grid div:nth-child(13) {
+.hijra-colour {
 	background-color: hsla(224,100%,52%,1.00);
 }
-.grid div:nth-child(14) {
+.pansexual-colour {
 	background-color: hsla(291,90%,28%,1.00);
 }
-.grid div:nth-child(15) {
+.polysexual-colour {
 	background-color: hsla(1,98%,45%,1.00);
 }
-.grid div:nth-child(16) {
+.kathoey-colour {
 	background-color: hsla(33,100%,50%,1.00);
 }
-.grid div:nth-child(17) {
+.unsure-colour {
 	background-color: hsla(56,100%,45%,1.00);
 }
-.grid div:nth-child(18) {
+.other-colour {
 	background-color: hsla(138,100%,25%,1.00);
 }
-.grid div:nth-child(19) {
-	background-color: hsla(224,100%,52%,1.00);
-}
-.grid div:nth-child(20), .grid div:nth-child(21) {
+.resources-colour, .about-colour {
 	background-color: hsla(0,0%,75%,1.00);
 }
 
@@ -190,9 +199,27 @@ a:hover {
 	background-size: cover;
 }
 
+.about-bkgd-img {
+	background-image: url("../images/peter-hershey-282615.jpg");
+	background-color: #cccccc;
+    background-repeat: no-repeat;
+/*    background-attachment: fixed;*/
+    background-position: 50% 35%;
+	background-size: cover;
+}
+
+.text-shadow {
+	text-shadow: 0 0 15px hsla(0, 0%, 0%, 0.15);
+}
+
 footer {
 	margin-top: 2rem;
-	color: hsla(0,0%,75%,1.00);
+	color: hsla(0,0%, 80%,1.00);
+	transition: color .25s ease-in-out;
+}
+
+footer:hover {
+	color: hsla(0,0%,50%,1.00);
 }
 
 /* Small devices (tablets, 768px and up) */

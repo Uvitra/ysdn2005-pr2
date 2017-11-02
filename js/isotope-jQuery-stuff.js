@@ -6,6 +6,14 @@ $('.grid').isotope({
   layoutMode: 'fitRows',
   getSortData: {
     name: '.name',
+	letterCount: function( itemElem ) {
+      var nameText = $( itemElem ).find('.name').text();
+		var characterCount = nameText.length;
+		if (nameText == "Resources") {
+			characterCount = 16;
+		}
+      return characterCount;
+    }
   }
 });
 
