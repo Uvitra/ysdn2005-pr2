@@ -63,6 +63,26 @@ h2 {
 
 .btn {
 	font-size: 100%;
+	background-color: white;
+	border-radius: 0;
+	border-color: hsla(0,0%,0%,0.18);
+}
+
+.btn-primary {
+	color: black;
+	font-weight: bold;
+	background-color: hsla(0,0%,95%,1.00);
+	
+}
+
+.btn-primary:hover {
+	background-color: grey;
+}
+
+.flex-centered-row {
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
 }
 
 .flex-bottom-left {
@@ -205,6 +225,24 @@ a:hover {
     background-repeat: no-repeat;
 /*    background-attachment: fixed;*/
     background-position: 50% 35%;
+	background-size: cover;
+}
+
+.construction-bkgd-img {
+	background-image: url("../images/igor-ovsyannykov-391062.jpg");
+	background-color: #cccccc;
+    background-repeat: no-repeat;
+/*    background-attachment: fixed;*/
+    background-position: 50% 62.5%;
+	background-size: cover;
+}
+
+.resources-bkgd-img {
+	background-image: url("../images/tracy-thomas-56810.jpg");
+	background-color: #cccccc;
+    background-repeat: no-repeat;
+/*    background-attachment: fixed;*/
+    background-position: 50% 18%;
 	background-size: cover;
 }
 
