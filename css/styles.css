@@ -53,6 +53,7 @@ h2 {
 
 .glyphicon-link {
 	font-size: smaller;
+	color: hsla(220,69%,36%,1.00);
 }
 
 .any-btn-group {
@@ -191,6 +192,14 @@ a:hover {
 .home-about {
 	line-height: 1;
 	padding-bottom: 1rem;
+}
+
+a h3, a h4 {
+	color: black;
+}
+
+a h3:hover, a h4:hover {
+	color: hsla(220,69%,36%,1.00);
 }
 
 /*L related links*/
